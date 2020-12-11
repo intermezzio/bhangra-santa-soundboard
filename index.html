@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bhangra Santa Soundtrack</title>
+</head>
+<body>
+<button onclick="playRandom(basically);">Basically</button>
+<button onclick="playRandom(oh_no);">Oh No!</button>
+<button onclick="playRandom(ok);">Ok</button>
+<button onclick="playRandom(good);">Good</button>
+<button onclick="playRandom(hoy_hoy_hoy);">Hoy Hoy</button>
+<button onclick="playRandom(oh_bhangra_santa);">Oh Bhangra Santa</button>
+<button onclick="playRandom(uhhh);">Uhhh...</button>
+<!-- <button>Basically</button> -->
+<script type="text/javascript">
+	basically = [
+		new Audio('basically0.mp3'),
+		new Audio('basically1.mp3'),
+		new Audio('basically2.mp3'),
+		new Audio('basically3.mp3'),
+		new Audio('basically4.mp3')
+	];
+
+	good = [
+		new Audio('good0.mp3')
+	];
+
+	hoy_hoy_hoy = [
+		new Audio('hoy_hoy_hoy0.mp3'),
+		new Audio('hoy_hoy_hoy1.mp3')
+	];
+
+	oh_bhangra_santa = [
+		new Audio('oh_bhangra_santa0.mp3'),
+		new Audio('oh_bhangra_santa1.mp3')
+	];
+
+	oh_no = [
+		new Audio('oh_no0.mp3')
+	];
+
+	ok = [
+		new Audio('ok0.mp3')
+	];
+
+	uhhh = [
+		new Audio('uhhh0.mp3')
+	];
+
+
+	function playRandom(list) {
+		list[Math.floor((Math.random()*list.length))].play();
+		return;
+	}
+
+</script>
+</body>
+</html>
