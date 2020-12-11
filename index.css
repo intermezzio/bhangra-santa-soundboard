@@ -56,6 +56,40 @@ button:hover {
 	grid-area: header;
 	text-align: center;
 }
+
+#pitch-div {
+	width: 100%;
+}
+
+#pitch-div input {
+	width: 100%;
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: 25px; /* Specified height */
+	background: LightGray; /* Grey background */
+	/*outline: none;  Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
+}
+
+#pitch-div input::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: IndianRed;
+  cursor: pointer;
+}
+
+#pitch-div input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: IndianRed;
+  cursor: pointer;
+}
+
 #datainput {
 	display: block;
 }
