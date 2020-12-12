@@ -5,18 +5,32 @@
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
+
 <button onclick="playRandom(basically);">Basically</button>
+<button onclick="playRandom(oh_thats_the_one);">Oh That's The One!</button>
 <button onclick="playRandom(oh_no);">Oh No!</button>
+<button onclick="playRandom(come_on);">Come on</button>
+<button onclick="playRandom(bad);">Bad?</button>
 <button onclick="playRandom(ok);">Ok</button>
 <button onclick="playRandom(good);">Good</button>
 <button onclick="playRandom(hoy_hoy_hoy);">Hoy Hoy</button>
 <button onclick="playRandom(oh_bhangra_santa);">Oh Bhangra Santa</button>
 <button onclick="playRandom(uhhh);">Uhhh...</button>
+<button onclick="playRandom(jaldi_jaldi);">Jaldi Jaldi</button>
+<button onclick="playRandom(balle);">Balle!</button>
 <br />
 <div id="pitch-div" onchange="updateSpeed();"><input type="range" min="25" max="200" value="100" class="slider" id="myRange"></div>
 Speed: <span id="speed">1.0</span>x
 <!-- <button>Basically</button> -->
 <script type="text/javascript">
+	bad = [
+		new Audio('bad0.mp3')
+	]
+
+	balle = [
+		new Audio('balle0.mp3')
+	]
+
 	basically = [
 		new Audio('basically0.mp3'),
 		new Audio('basically1.mp3'),
@@ -25,13 +39,22 @@ Speed: <span id="speed">1.0</span>x
 		new Audio('basically4.mp3')
 	];
 
+	come_on = [
+		new Audio('come_on0.mp3')
+	];
+
 	good = [
 		new Audio('good0.mp3')
 	];
 
 	hoy_hoy_hoy = [
 		new Audio('hoy_hoy_hoy0.mp3'),
-		new Audio('hoy_hoy_hoy1.mp3')
+		new Audio('hoy_hoy_hoy1.mp3'),
+		new Audio('hoy_hoy_hoy2.mp3')
+	];
+
+	jaldi_jaldi = [
+		new Audio('jaldi_jaldi0.mp3')
 	];
 
 	oh_bhangra_santa = [
@@ -40,8 +63,13 @@ Speed: <span id="speed">1.0</span>x
 	];
 
 	oh_no = [
-		new Audio('oh_no0.mp3')
+		new Audio('oh_no0.mp3'),
+		new Audio('oh_no1.mp3')
 	];
+
+	oh_thats_the_one = [
+		new Audio('oh_thats_the_one0.mp3')
+	]
 
 	ok = [
 		new Audio('ok0.mp3')
