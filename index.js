@@ -72,6 +72,11 @@ oh_thats_the_one = {
 	count: 2
 }
 
+funny = {
+	name: "funny",
+	count: 1
+}
+
 ok = {
 	name: "ok",
 	count: 2
