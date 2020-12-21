@@ -18,8 +18,8 @@ td {
 button {
 	background-color: LightPink;
 	font: 16px "Work Sans", sans-serif;
-	padding: 10px;
-	margin: 0px;
+	padding: 20px;
+	margin: 5px !important;
 	border: 1px solid IndianRed;
 	transition: background-color 0.1s;
 	-webkit-transition: background-color 0.1s;

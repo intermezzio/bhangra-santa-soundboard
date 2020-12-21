@@ -27,6 +27,11 @@ good_morning_sir = [
 	new Audio('good_morning_sir0.mp3')
 ]
 
+good_morning = {
+	name: "good_morning",
+	count: 1
+}
+
 hello = {
 	name: "hello",
 	count: 2
@@ -72,6 +77,11 @@ ok = {
 	count: 2
 }
 
+problem_solved = {
+	name: "problem_solved",
+	count: 1
+}
+
 uhhh = [
 	new Audio('uhhh0.mp3')
 ];
@@ -79,6 +89,10 @@ uhhh = [
 speed = document.querySelector("#pitch-div input");
 
 function playRandom(list) {
+	if(Math.random() < 0.05) {
+		playFunnyNo();
+		return;
+	}
 	sound = list[Math.floor((Math.random()*list.length))];
 	sound.playbackRate = parseFloat(speed.value)/100;
 	sound.preservePitch = false;
@@ -89,6 +103,10 @@ function playRandom(list) {
 function playObject(object) {
 	console.log(object);
 	console.log(object.count);
+	if(Math.random() < 0.05) {
+		playFunnyNo();
+		return;
+	}
 	index = Math.floor(Math.random()*object.count);
 	sound = new Audio(object.name + index + ".mp3");
 	playSound(sound);
@@ -98,6 +116,11 @@ function playSound(sound) {
 	sound.playbackRate = parseFloat(speed.value)/100;
 	sound.preservePitch = false;
 	sound.play();
+}
+
+function playFunnyNo() {
+	sound = new Audio("no_patel0.mp3");
+	playSound(sound);
 }
 // function LinkCheck(url)
 // {
@@ -197,4 +220,3 @@ function updateSpeed() {
 //     document.getElementById('play').href=''
 //     document.getElementById('play').innerHTML='Refresh to play again'
 // }
-
