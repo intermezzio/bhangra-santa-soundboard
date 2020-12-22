@@ -130,7 +130,7 @@ function playFunnyNo() {
 
 var buttons = document.querySelectorAll(".fastclick");
 for(button of buttons) {
-	new FastClick("button")
+	new FastClick("button");
 }
 // function LinkCheck(url)
 // {

@@ -1,3 +1,7 @@
+html {
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+}
 body {
 	background-color: #E8C4BB;
 	font-family: "Work Sans", sans-serif;
