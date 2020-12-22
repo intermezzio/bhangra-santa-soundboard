@@ -7,7 +7,7 @@
 </head>
 <body>
 <div id="root"></div>
-<center>
+<center class="fastclick">
 <button class="btn waves-effect waves-light red lighten-2" onclick="playObject(hello);">Hello</button>
 <button class="btn waves-effect waves-light red lighten-2" onclick="playRandom(basically);">Basically</button>
 
@@ -42,10 +42,11 @@
 <br />
 <br />
 
-<div id="pitch-div" oninput="updateSpeed();"><input type="range" min="25" max="200" value="100" class="slider" id="myRange"></div>
-Speed: <span id="speed">1.0</span>x
+<div id="pitch-div" onload="updateSpeed()" oninput="updateSpeed();"><input type="range" min="25" max="200" value="100" class="slider" id="myRange"></div>
+Speed: <span id="speed" onload="updateSpeed()">1.0</span>x
 <!-- <button>Basically</button> -->
 </center>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ftlabs/fastclick/lib/fastclick.js"></script>
 <script type="text/javascript" src="index.js">
 	
 </script>

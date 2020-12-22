@@ -127,6 +127,11 @@ function playFunnyNo() {
 	sound = new Audio("no_patel0.mp3");
 	playSound(sound);
 }
+
+var buttons = document.querySelectorAll(".fastclick");
+for(button of buttons) {
+	new FastClick("button")
+}
 // function LinkCheck(url)
 // {
 //     var http = new XMLHttpRequest();
